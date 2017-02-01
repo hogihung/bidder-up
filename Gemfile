@@ -8,7 +8,10 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
 
-# Use sequel instead of sqlite3.
+# Use sqlite3 as the database for Active Record
+gem 'sqlite3'
+
+# We will use sequel as our 'In-Memory' storage. 
 gem 'sequel', '~> 4.42', '>= 4.42.1'
 
 gem 'puma', '~> 3.0'
@@ -21,6 +24,11 @@ gem 'jbuilder', '~> 2.5'
 
 # Add Bootstrap for styling - I'm horrible at the working the UI.
 gem 'bootstrap', '~> 4.0.0.alpha6'
+
+# Added to support Bootstrap
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.3.3'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
