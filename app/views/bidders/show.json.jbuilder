@@ -1,0 +1,1 @@
+json.partial! "bidders/bidder", bidder: @bidder

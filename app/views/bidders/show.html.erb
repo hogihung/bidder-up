@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @bidder.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @bidder.last_name %>
+</p>
+
+<p>
+  <strong>Limit:</strong>
+  <%= @bidder.limit %>
+</p>
+
+<p>
+  <strong>Decimal:</strong>
+  <%= @bidder.decimal %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @bidder.active %>
+</p>
+
+<%= link_to 'Edit', edit_bidder_path(@bidder) %> |
+<%= link_to 'Back', bidders_path %>

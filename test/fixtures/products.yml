@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  publisher: MyString
+  title: MyString
+  reserve_price: MyString
+  decimal: MyString
+  quantity: 1
+
+two:
+  publisher: MyString
+  title: MyString
+  reserve_price: MyString
+  decimal: MyString
+  quantity: 1

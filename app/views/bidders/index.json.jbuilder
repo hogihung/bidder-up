@@ -1,0 +1,1 @@
+json.array! @bidders, partial: 'bidders/bidder', as: :bidder

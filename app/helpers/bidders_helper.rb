@@ -1,0 +1,2 @@
+module BiddersHelper
+end
