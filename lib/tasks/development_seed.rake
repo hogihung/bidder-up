@@ -16,14 +16,13 @@ unless Rails.env.production?
         Bidder.create(first_name: bidder[:first_name], last_name: bidder[:last_name], 
                       limit: bidder[:limit], active: bidder[:active])
       end
-      #
+       
       # Create Products (suck in CSV File)
       puts "Parsing CSV File to import the auction products.....\n"
       CSV.foreach(products_file, headers: true) do |row|
         p row
         Product.create!(publisher: row[1], title: row[2], quantity: row[3], reserve_price: row[4])
       end
-      #
     end
   end
 end
