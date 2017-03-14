@@ -5,6 +5,7 @@
 <table class="table table-striped">
   <thead>
     <tr>
+      <th>AUCID</th>
       <th>Publisher</th>
       <th>Title</th>
       <th>Quantity</th>
@@ -16,10 +17,11 @@
   <tbody>
     <% @products.each do |product| %>
       <tr>
+        <td><%= product.aucid %></td>
         <td><%= product.publisher %></td>
         <td><%= product.title %></td>
         <td><%= product.quantity %></td>
-        <td><%= product.reserve_price %></td>
+        <td><%= number_to_currency(product.reserve_price) %></td>
         <td><%= link_to 'Show', product %></td>
         <td><%= link_to 'Edit', edit_product_path(product) %></td>
         <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>

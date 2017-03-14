@@ -5,6 +5,7 @@
 <table class="table table-striped">
   <thead>
     <tr>
+      <th>BUID</th>
       <th>First name</th>
       <th>Last name</th>
       <th>Limit</th>
@@ -16,9 +17,10 @@
   <tbody>
     <% @bidders.each do |bidder| %>
       <tr>
+        <td><%= bidder.buid %></td>
         <td><%= bidder.first_name %></td>
         <td><%= bidder.last_name %></td>
-        <td><%= bidder.limit %></td>
+        <td><%= number_to_currency(bidder.limit) %></td>
         <td><%= bidder.active %></td>
         <td><%= link_to 'Show', bidder %></td>
         <td><%= link_to 'Edit', edit_bidder_path(bidder) %></td>
