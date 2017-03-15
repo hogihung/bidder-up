@@ -9,17 +9,6 @@ unless Rails.env.production?
     task prime: "db:setup" do
       # Create Bidders
       puts "Creating some bidders.....\n"
-#      BIDDERS = [{buid: "jf521", first_name: "John", last_name: "Fogarty", limit: 100_000, active: true},
-#                 {buid: "ss029", first_name: "Sally", last_name: "Struthers", limit: 140_000, active: true},
-#                 {buid: "dm225", first_name: "Dave", last_name: "Minion", limit: 1_000_000, active: true},
-#      ]
-#
-#      BIDDERS.each do |bidder|
-#        Bidder.create(buid: bidder[:buid], first_name: bidder[:first_name],
-#                      last_name: bidder[:last_name], limit: bidder[:limit], 
-#                      active: bidder[:active])
-#      end
-
       CSV.foreach(bidders_file, headers: true) do |row|
         p row
         Bidder.create!(buid: row[0], first_name: row[1], last_name: row[2], limit: row[3], active: row[4])
