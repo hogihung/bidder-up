@@ -5,26 +5,24 @@
 <table class="table table-striped">
   <thead>
     <tr>
+      <th>ID</th>
       <th>BUID</th>
       <th>First name</th>
       <th>Last name</th>
       <th>Limit</th>
       <th>Active</th>
-      <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @bidders.each do |bidder| %>
       <tr>
+        <td><%= bidder.id %></td>
         <td><%= bidder.buid %></td>
         <td><%= bidder.first_name %></td>
         <td><%= bidder.last_name %></td>
         <td><%= number_to_currency(bidder.limit) %></td>
         <td><%= bidder.active %></td>
-        <td><%= link_to 'Show', bidder %></td>
-        <td><%= link_to 'Edit', edit_bidder_path(bidder) %></td>
-        <td><%= link_to 'Destroy', bidder, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +30,3 @@
 
 <br>
 
-<%= link_to 'New Bidder', new_bidder_path %>
