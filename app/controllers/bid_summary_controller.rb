@@ -1,10 +1,10 @@
 class BidSummaryController < ApplicationController
 
   def index
-    products = Product.last
-    bidders = Bidder.last
-    bids = ["1", "2", "6"]
+    products = Product.all
+    bidders = Bidder.all
+    bids = Bid.all
+
     @bid_summary = BidSummary::IndexView.new(products, bidders, bids)
-#    binding.pry
   end
 end

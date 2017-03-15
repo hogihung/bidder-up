@@ -2,7 +2,7 @@
 
 <h1>Bid Summary</h1>
 
-<p><%= puts @bid_summary.products %></p>
+<p><%= "BID COUNT: #{@bid_summary.bids.count}" %></p>
 
 <table class="table table-striped">
   <thead>
@@ -16,8 +16,19 @@
     </tr>
   </thead>
 
+  <tbody>
+    <% @bid_summary.bid_rows.each do |row| %>
+      <tr>
+        <td><%= row.aucid %></td>
+        <td><%= row.title %></td>
+        <td><%= row.quantity %></td>
+        <td><%= number_to_currency(row.high_bid) %></td>
+        <td><%= row.demand %></td>
+        <td><%= row.reserve_met %></td>
+      </tr>
+    <% end %>
+  </tbody>
 </table>
 
 <br>
-
 
