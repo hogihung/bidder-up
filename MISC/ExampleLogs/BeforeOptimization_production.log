@@ -1,0 +1,110 @@
+➜  bidder-up git:(master) ✗ tail -f log/production.log
+I, [2017-03-15T20:42:22.827403 #13420]  INFO -- : [21e682b7-b3d8-46f6-8023-7f976bfc3434] Completed 200 OK in 184ms (Views: 174.8ms | ActiveRecord: 4.1ms)
+I, [2017-03-15T20:42:28.484502 #13420]  INFO -- : [57fd1e4d-78f4-41bc-a79e-eacfcad1eba9] Started GET "/" for 127.0.0.1 at 2017-03-15 20:42:28 -0400
+I, [2017-03-15T20:42:28.485491 #13420]  INFO -- : [57fd1e4d-78f4-41bc-a79e-eacfcad1eba9] Processing by BidSummaryController#index as HTML
+I, [2017-03-15T20:42:28.489539 #13420]  INFO -- : [57fd1e4d-78f4-41bc-a79e-eacfcad1eba9]   Rendering bid_summary/index.html.erb within layouts/application
+D, [2017-03-15T20:42:28.491417 #13420] DEBUG -- : [57fd1e4d-78f4-41bc-a79e-eacfcad1eba9]    (0.1ms)  SELECT COUNT(*) FROM "bids"
+D, [2017-03-15T20:42:28.494730 #13420] DEBUG -- : [57fd1e4d-78f4-41bc-a79e-eacfcad1eba9]   Product Load (3.0ms)  SELECT "products".* FROM "products"
+D, [2017-03-15T20:42:28.508222 #13420] DEBUG -- : [57fd1e4d-78f4-41bc-a79e-eacfcad1eba9]   Bid Load (1.9ms)  SELECT "bids".* FROM "bids"
+I, [2017-03-15T20:42:28.664400 #13420]  INFO -- : [57fd1e4d-78f4-41bc-a79e-eacfcad1eba9]   Rendered bid_summary/index.html.erb within layouts/application (174.8ms)
+I, [2017-03-15T20:42:28.665462 #13420]  INFO -- : [57fd1e4d-78f4-41bc-a79e-eacfcad1eba9]   Rendered layouts/_nav_bar.erb (0.4ms)
+I, [2017-03-15T20:42:28.665766 #13420]  INFO -- : [57fd1e4d-78f4-41bc-a79e-eacfcad1eba9] Completed 200 OK in 180ms (Views: 172.1ms | ActiveRecord: 5.7ms)
+I, [2017-03-15T20:42:59.263646 #13420]  INFO -- : [12d063db-80c3-49d6-96dc-a86a47536230] Started GET "/" for 127.0.0.1 at 2017-03-15 20:42:59 -0400
+I, [2017-03-15T20:42:59.264234 #13420]  INFO -- : [12d063db-80c3-49d6-96dc-a86a47536230] Processing by BidSummaryController#index as HTML
+I, [2017-03-15T20:42:59.265065 #13420]  INFO -- : [12d063db-80c3-49d6-96dc-a86a47536230]   Rendering bid_summary/index.html.erb within layouts/application
+D, [2017-03-15T20:42:59.265645 #13420] DEBUG -- : [12d063db-80c3-49d6-96dc-a86a47536230]    (0.1ms)  SELECT COUNT(*) FROM "bids"
+D, [2017-03-15T20:42:59.267872 #13420] DEBUG -- : [12d063db-80c3-49d6-96dc-a86a47536230]   Product Load (2.0ms)  SELECT "products".* FROM "products"
+D, [2017-03-15T20:42:59.280602 #13420] DEBUG -- : [12d063db-80c3-49d6-96dc-a86a47536230]   Bid Load (2.6ms)  SELECT "bids".* FROM "bids"
+I, [2017-03-15T20:42:59.468407 #13420]  INFO -- : [12d063db-80c3-49d6-96dc-a86a47536230]   Rendered bid_summary/index.html.erb within layouts/application (203.3ms)
+I, [2017-03-15T20:42:59.469393 #13420]  INFO -- : [12d063db-80c3-49d6-96dc-a86a47536230]   Rendered layouts/_nav_bar.erb (0.3ms)
+I, [2017-03-15T20:42:59.469702 #13420]  INFO -- : [12d063db-80c3-49d6-96dc-a86a47536230] Completed 200 OK in 205ms (Views: 200.0ms | ActiveRecord: 4.8ms)
+I, [2017-03-15T20:43:01.880332 #13420]  INFO -- : [e3cfef19-50e7-4f79-bcde-026c48f69912] Started GET "/" for 127.0.0.1 at 2017-03-15 20:43:01 -0400
+I, [2017-03-15T20:43:01.880831 #13420]  INFO -- : [e3cfef19-50e7-4f79-bcde-026c48f69912] Processing by BidSummaryController#index as HTML
+I, [2017-03-15T20:43:01.881585 #13420]  INFO -- : [e3cfef19-50e7-4f79-bcde-026c48f69912]   Rendering bid_summary/index.html.erb within layouts/application
+D, [2017-03-15T20:43:01.882152 #13420] DEBUG -- : [e3cfef19-50e7-4f79-bcde-026c48f69912]    (0.2ms)  SELECT COUNT(*) FROM "bids"
+D, [2017-03-15T20:43:01.884467 #13420] DEBUG -- : [e3cfef19-50e7-4f79-bcde-026c48f69912]   Product Load (2.1ms)  SELECT "products".* FROM "products"
+D, [2017-03-15T20:43:01.895223 #13420] DEBUG -- : [e3cfef19-50e7-4f79-bcde-026c48f69912]   Bid Load (1.6ms)  SELECT "bids".* FROM "bids"
+I, [2017-03-15T20:43:02.018611 #13420]  INFO -- : [e3cfef19-50e7-4f79-bcde-026c48f69912]   Rendered bid_summary/index.html.erb within layouts/application (136.9ms)
+I, [2017-03-15T20:43:02.019642 #13420]  INFO -- : [e3cfef19-50e7-4f79-bcde-026c48f69912]   Rendered layouts/_nav_bar.erb (0.4ms)
+I, [2017-03-15T20:43:02.019987 #13420]  INFO -- : [e3cfef19-50e7-4f79-bcde-026c48f69912] Completed 200 OK in 139ms (Views: 134.8ms | ActiveRecord: 3.8ms)
+I, [2017-03-15T20:43:05.120616 #13420]  INFO -- : [84c837a8-03ef-48b5-87a8-70dba1fc1b3b] Started GET "/" for 127.0.0.1 at 2017-03-15 20:43:05 -0400
+I, [2017-03-15T20:43:05.121156 #13420]  INFO -- : [84c837a8-03ef-48b5-87a8-70dba1fc1b3b] Processing by BidSummaryController#index as HTML
+I, [2017-03-15T20:43:05.121920 #13420]  INFO -- : [84c837a8-03ef-48b5-87a8-70dba1fc1b3b]   Rendering bid_summary/index.html.erb within layouts/application
+D, [2017-03-15T20:43:05.122449 #13420] DEBUG -- : [84c837a8-03ef-48b5-87a8-70dba1fc1b3b]    (0.1ms)  SELECT COUNT(*) FROM "bids"
+D, [2017-03-15T20:43:05.124617 #13420] DEBUG -- : [84c837a8-03ef-48b5-87a8-70dba1fc1b3b]   Product Load (1.9ms)  SELECT "products".* FROM "products"
+D, [2017-03-15T20:43:05.135132 #13420] DEBUG -- : [84c837a8-03ef-48b5-87a8-70dba1fc1b3b]   Bid Load (1.6ms)  SELECT "bids".* FROM "bids"
+I, [2017-03-15T20:43:05.259730 #13420]  INFO -- : [84c837a8-03ef-48b5-87a8-70dba1fc1b3b]   Rendered bid_summary/index.html.erb within layouts/application (137.7ms)
+I, [2017-03-15T20:43:05.260784 #13420]  INFO -- : [84c837a8-03ef-48b5-87a8-70dba1fc1b3b]   Rendered layouts/_nav_bar.erb (0.4ms)
+I, [2017-03-15T20:43:05.261135 #13420]  INFO -- : [84c837a8-03ef-48b5-87a8-70dba1fc1b3b] Completed 200 OK in 140ms (Views: 135.7ms | ActiveRecord: 3.6ms)
+I, [2017-03-15T20:43:09.121291 #13420]  INFO -- : [e6f0e386-590e-4c1e-93f6-300a7a525b06] Started GET "/" for 127.0.0.1 at 2017-03-15 20:43:09 -0400
+I, [2017-03-15T20:43:09.121845 #13420]  INFO -- : [e6f0e386-590e-4c1e-93f6-300a7a525b06] Processing by BidSummaryController#index as HTML
+I, [2017-03-15T20:43:09.122644 #13420]  INFO -- : [e6f0e386-590e-4c1e-93f6-300a7a525b06]   Rendering bid_summary/index.html.erb within layouts/application
+D, [2017-03-15T20:43:09.123227 #13420] DEBUG -- : [e6f0e386-590e-4c1e-93f6-300a7a525b06]    (0.1ms)  SELECT COUNT(*) FROM "bids"
+D, [2017-03-15T20:43:09.125522 #13420] DEBUG -- : [e6f0e386-590e-4c1e-93f6-300a7a525b06]   Product Load (2.0ms)  SELECT "products".* FROM "products"
+D, [2017-03-15T20:43:09.136583 #13420] DEBUG -- : [e6f0e386-590e-4c1e-93f6-300a7a525b06]   Bid Load (1.9ms)  SELECT "bids".* FROM "bids"
+I, [2017-03-15T20:43:09.267586 #13420]  INFO -- : [e6f0e386-590e-4c1e-93f6-300a7a525b06]   Rendered bid_summary/index.html.erb within layouts/application (144.8ms)
+I, [2017-03-15T20:43:09.268607 #13420]  INFO -- : [e6f0e386-590e-4c1e-93f6-300a7a525b06]   Rendered layouts/_nav_bar.erb (0.3ms)
+I, [2017-03-15T20:43:09.268936 #13420]  INFO -- : [e6f0e386-590e-4c1e-93f6-300a7a525b06] Completed 200 OK in 147ms (Views: 142.4ms | ActiveRecord: 4.0ms)
+I, [2017-03-15T20:43:11.939861 #13420]  INFO -- : [7f3a61b7-9a1a-4da6-a0ae-aae4b228562a] Started GET "/" for 127.0.0.1 at 2017-03-15 20:43:11 -0400
+I, [2017-03-15T20:43:11.940451 #13420]  INFO -- : [7f3a61b7-9a1a-4da6-a0ae-aae4b228562a] Processing by BidSummaryController#index as HTML
+I, [2017-03-15T20:43:11.941264 #13420]  INFO -- : [7f3a61b7-9a1a-4da6-a0ae-aae4b228562a]   Rendering bid_summary/index.html.erb within layouts/application
+D, [2017-03-15T20:43:11.941913 #13420] DEBUG -- : [7f3a61b7-9a1a-4da6-a0ae-aae4b228562a]    (0.1ms)  SELECT COUNT(*) FROM "bids"
+D, [2017-03-15T20:43:11.944164 #13420] DEBUG -- : [7f3a61b7-9a1a-4da6-a0ae-aae4b228562a]   Product Load (2.0ms)  SELECT "products".* FROM "products"
+D, [2017-03-15T20:43:11.954751 #13420] DEBUG -- : [7f3a61b7-9a1a-4da6-a0ae-aae4b228562a]   Bid Load (1.5ms)  SELECT "bids".* FROM "bids"
+I, [2017-03-15T20:43:12.127427 #13420]  INFO -- : [7f3a61b7-9a1a-4da6-a0ae-aae4b228562a]   Rendered bid_summary/index.html.erb within layouts/application (186.1ms)
+I, [2017-03-15T20:43:12.128464 #13420]  INFO -- : [7f3a61b7-9a1a-4da6-a0ae-aae4b228562a]   Rendered layouts/_nav_bar.erb (0.3ms)
+I, [2017-03-15T20:43:12.128837 #13420]  INFO -- : [7f3a61b7-9a1a-4da6-a0ae-aae4b228562a] Completed 200 OK in 188ms (Views: 184.1ms | ActiveRecord: 3.6ms)
+I, [2017-03-15T20:43:14.129288 #13420]  INFO -- : [8cc906a6-06f0-4537-a523-aec579ae96ce] Started GET "/" for 127.0.0.1 at 2017-03-15 20:43:14 -0400
+I, [2017-03-15T20:43:14.129821 #13420]  INFO -- : [8cc906a6-06f0-4537-a523-aec579ae96ce] Processing by BidSummaryController#index as HTML
+I, [2017-03-15T20:43:14.130589 #13420]  INFO -- : [8cc906a6-06f0-4537-a523-aec579ae96ce]   Rendering bid_summary/index.html.erb within layouts/application
+D, [2017-03-15T20:43:14.131167 #13420] DEBUG -- : [8cc906a6-06f0-4537-a523-aec579ae96ce]    (0.1ms)  SELECT COUNT(*) FROM "bids"
+D, [2017-03-15T20:43:14.133703 #13420] DEBUG -- : [8cc906a6-06f0-4537-a523-aec579ae96ce]   Product Load (2.3ms)  SELECT "products".* FROM "products"
+D, [2017-03-15T20:43:14.146644 #13420] DEBUG -- : [8cc906a6-06f0-4537-a523-aec579ae96ce]   Bid Load (2.1ms)  SELECT "bids".* FROM "bids"
+I, [2017-03-15T20:43:14.287893 #13420]  INFO -- : [8cc906a6-06f0-4537-a523-aec579ae96ce]   Rendered bid_summary/index.html.erb within layouts/application (157.2ms)
+I, [2017-03-15T20:43:14.288912 #13420]  INFO -- : [8cc906a6-06f0-4537-a523-aec579ae96ce]   Rendered layouts/_nav_bar.erb (0.3ms)
+I, [2017-03-15T20:43:14.289205 #13420]  INFO -- : [8cc906a6-06f0-4537-a523-aec579ae96ce] Completed 200 OK in 159ms (Views: 154.2ms | ActiveRecord: 4.5ms)
+I, [2017-03-15T20:43:16.857270 #13420]  INFO -- : [94563096-335b-4f29-81ae-697e9c2944cf] Started GET "/" for 127.0.0.1 at 2017-03-15 20:43:16 -0400
+I, [2017-03-15T20:43:16.857775 #13420]  INFO -- : [94563096-335b-4f29-81ae-697e9c2944cf] Processing by BidSummaryController#index as HTML
+I, [2017-03-15T20:43:16.858541 #13420]  INFO -- : [94563096-335b-4f29-81ae-697e9c2944cf]   Rendering bid_summary/index.html.erb within layouts/application
+D, [2017-03-15T20:43:16.859114 #13420] DEBUG -- : [94563096-335b-4f29-81ae-697e9c2944cf]    (0.1ms)  SELECT COUNT(*) FROM "bids"
+D, [2017-03-15T20:43:16.862734 #13420] DEBUG -- : [94563096-335b-4f29-81ae-697e9c2944cf]   Product Load (2.0ms)  SELECT "products".* FROM "products"
+D, [2017-03-15T20:43:16.874378 #13420] DEBUG -- : [94563096-335b-4f29-81ae-697e9c2944cf]   Bid Load (1.7ms)  SELECT "bids".* FROM "bids"
+I, [2017-03-15T20:43:17.008985 #13420]  INFO -- : [94563096-335b-4f29-81ae-697e9c2944cf]   Rendered bid_summary/index.html.erb within layouts/application (150.3ms)
+I, [2017-03-15T20:43:17.009974 #13420]  INFO -- : [94563096-335b-4f29-81ae-697e9c2944cf]   Rendered layouts/_nav_bar.erb (0.4ms)
+I, [2017-03-15T20:43:17.010305 #13420]  INFO -- : [94563096-335b-4f29-81ae-697e9c2944cf] Completed 200 OK in 152ms (Views: 148.0ms | ActiveRecord: 3.9ms)
+I, [2017-03-15T20:43:19.355964 #13420]  INFO -- : [047bbb88-9736-4ec2-bb5e-7bf19fc48943] Started GET "/" for 127.0.0.1 at 2017-03-15 20:43:19 -0400
+I, [2017-03-15T20:43:19.356513 #13420]  INFO -- : [047bbb88-9736-4ec2-bb5e-7bf19fc48943] Processing by BidSummaryController#index as HTML
+I, [2017-03-15T20:43:19.357263 #13420]  INFO -- : [047bbb88-9736-4ec2-bb5e-7bf19fc48943]   Rendering bid_summary/index.html.erb within layouts/application
+D, [2017-03-15T20:43:19.357797 #13420] DEBUG -- : [047bbb88-9736-4ec2-bb5e-7bf19fc48943]    (0.1ms)  SELECT COUNT(*) FROM "bids"
+D, [2017-03-15T20:43:19.359858 #13420] DEBUG -- : [047bbb88-9736-4ec2-bb5e-7bf19fc48943]   Product Load (1.8ms)  SELECT "products".* FROM "products"
+D, [2017-03-15T20:43:19.370451 #13420] DEBUG -- : [047bbb88-9736-4ec2-bb5e-7bf19fc48943]   Bid Load (1.5ms)  SELECT "bids".* FROM "bids"
+I, [2017-03-15T20:43:19.486648 #13420]  INFO -- : [047bbb88-9736-4ec2-bb5e-7bf19fc48943]   Rendered bid_summary/index.html.erb within layouts/application (129.3ms)
+I, [2017-03-15T20:43:19.487626 #13420]  INFO -- : [047bbb88-9736-4ec2-bb5e-7bf19fc48943]   Rendered layouts/_nav_bar.erb (0.3ms)
+I, [2017-03-15T20:43:19.487983 #13420]  INFO -- : [047bbb88-9736-4ec2-bb5e-7bf19fc48943] Completed 200 OK in 131ms (Views: 127.4ms | ActiveRecord: 3.4ms)
+I, [2017-03-15T20:43:21.730728 #13420]  INFO -- : [306b4c32-d8f0-4f75-969c-0a1c767d0b97] Started GET "/" for 127.0.0.1 at 2017-03-15 20:43:21 -0400
+I, [2017-03-15T20:43:21.731307 #13420]  INFO -- : [306b4c32-d8f0-4f75-969c-0a1c767d0b97] Processing by BidSummaryController#index as HTML
+I, [2017-03-15T20:43:21.732042 #13420]  INFO -- : [306b4c32-d8f0-4f75-969c-0a1c767d0b97]   Rendering bid_summary/index.html.erb within layouts/application
+D, [2017-03-15T20:43:21.732610 #13420] DEBUG -- : [306b4c32-d8f0-4f75-969c-0a1c767d0b97]    (0.1ms)  SELECT COUNT(*) FROM "bids"
+D, [2017-03-15T20:43:21.734869 #13420] DEBUG -- : [306b4c32-d8f0-4f75-969c-0a1c767d0b97]   Product Load (2.0ms)  SELECT "products".* FROM "products"
+D, [2017-03-15T20:43:21.745305 #13420] DEBUG -- : [306b4c32-d8f0-4f75-969c-0a1c767d0b97]   Bid Load (1.4ms)  SELECT "bids".* FROM "bids"
+I, [2017-03-15T20:43:21.868139 #13420]  INFO -- : [306b4c32-d8f0-4f75-969c-0a1c767d0b97]   Rendered bid_summary/index.html.erb within layouts/application (136.0ms)
+I, [2017-03-15T20:43:21.869188 #13420]  INFO -- : [306b4c32-d8f0-4f75-969c-0a1c767d0b97]   Rendered layouts/_nav_bar.erb (0.4ms)
+I, [2017-03-15T20:43:21.869649 #13420]  INFO -- : [306b4c32-d8f0-4f75-969c-0a1c767d0b97] Completed 200 OK in 138ms (Views: 134.1ms | ActiveRecord: 3.6ms)
+I, [2017-03-15T20:43:24.030359 #13420]  INFO -- : [a75db720-ba59-4990-95af-4551fb22c6ee] Started GET "/" for 127.0.0.1 at 2017-03-15 20:43:24 -0400
+I, [2017-03-15T20:43:24.030975 #13420]  INFO -- : [a75db720-ba59-4990-95af-4551fb22c6ee] Processing by BidSummaryController#index as HTML
+I, [2017-03-15T20:43:24.031876 #13420]  INFO -- : [a75db720-ba59-4990-95af-4551fb22c6ee]   Rendering bid_summary/index.html.erb within layouts/application
+D, [2017-03-15T20:43:24.032457 #13420] DEBUG -- : [a75db720-ba59-4990-95af-4551fb22c6ee]    (0.1ms)  SELECT COUNT(*) FROM "bids"
+D, [2017-03-15T20:43:24.034837 #13420] DEBUG -- : [a75db720-ba59-4990-95af-4551fb22c6ee]   Product Load (2.1ms)  SELECT "products".* FROM "products"
+D, [2017-03-15T20:43:24.045756 #13420] DEBUG -- : [a75db720-ba59-4990-95af-4551fb22c6ee]   Bid Load (1.6ms)  SELECT "bids".* FROM "bids"
+I, [2017-03-15T20:43:24.175958 #13420]  INFO -- : [a75db720-ba59-4990-95af-4551fb22c6ee]   Rendered bid_summary/index.html.erb within layouts/application (144.0ms)
+I, [2017-03-15T20:43:24.176888 #13420]  INFO -- : [a75db720-ba59-4990-95af-4551fb22c6ee]   Rendered layouts/_nav_bar.erb (0.3ms)
+I, [2017-03-15T20:43:24.177200 #13420]  INFO -- : [a75db720-ba59-4990-95af-4551fb22c6ee] Completed 200 OK in 146ms (Views: 141.7ms | ActiveRecord: 3.8ms)
+I, [2017-03-15T20:43:26.645560 #13420]  INFO -- : [7f5c78a3-ea8c-4af4-920c-97ca00a8b665] Started GET "/" for 127.0.0.1 at 2017-03-15 20:43:26 -0400
+I, [2017-03-15T20:43:26.646112 #13420]  INFO -- : [7f5c78a3-ea8c-4af4-920c-97ca00a8b665] Processing by BidSummaryController#index as HTML
+I, [2017-03-15T20:43:26.646961 #13420]  INFO -- : [7f5c78a3-ea8c-4af4-920c-97ca00a8b665]   Rendering bid_summary/index.html.erb within layouts/application
+D, [2017-03-15T20:43:26.647570 #13420] DEBUG -- : [7f5c78a3-ea8c-4af4-920c-97ca00a8b665]    (0.1ms)  SELECT COUNT(*) FROM "bids"
+D, [2017-03-15T20:43:26.649815 #13420] DEBUG -- : [7f5c78a3-ea8c-4af4-920c-97ca00a8b665]   Product Load (2.0ms)  SELECT "products".* FROM "products"
+D, [2017-03-15T20:43:26.660360 #13420] DEBUG -- : [7f5c78a3-ea8c-4af4-920c-97ca00a8b665]   Bid Load (1.5ms)  SELECT "bids".* FROM "bids"
+I, [2017-03-15T20:43:26.777809 #13420]  INFO -- : [7f5c78a3-ea8c-4af4-920c-97ca00a8b665]   Rendered bid_summary/index.html.erb within layouts/application (130.7ms)
+I, [2017-03-15T20:43:26.778806 #13420]  INFO -- : [7f5c78a3-ea8c-4af4-920c-97ca00a8b665]   Rendered layouts/_nav_bar.erb (0.4ms)
+I, [2017-03-15T20:43:26.779110 #13420]  INFO -- : [7f5c78a3-ea8c-4af4-920c-97ca00a8b665] Completed 200 OK in 133ms (Views: 128.7ms | ActiveRecord: 3.6ms)
