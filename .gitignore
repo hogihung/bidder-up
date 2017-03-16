@@ -22,3 +22,6 @@
 
 # Ignore the Public directory and files
 /public/*
+
+# Ignore RubyProf generated files
+data/perf_profile/*
