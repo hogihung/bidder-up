@@ -1,18 +1,18 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Bid Summary</h1>
+<h1><%= UiStr::BID_SUMMARY %></h1>
 
-<p><%= "BID COUNT: #{@bid_summary.bids.count}" %></p>
+<p><%= "#{UiStr::BID_COUNT} #{@bid_summary.bids.count}" %></p>
 
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>ProductID</th>
-      <th>Title</th>
-      <th>Quantity</th>
-      <th>High Bid Amount</th>
-      <th>Demand</th>
-      <th>Reserve Met?</th>
+      <th><%= UiStr::PRODUCTID %></th>
+      <th><%= UiStr::TITLE %></th>
+      <th><%= UiStr::QUANTITY %></th>
+      <th><%= UiStr::HIGH_BID %></th>
+      <th><%= UiStr::DEMAND %></th>
+      <th><%= UiStr::RESERVE_MET %></th>
     </tr>
   </thead>
 
