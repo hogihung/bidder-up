@@ -7,6 +7,8 @@ The Ruby based, with Rails framework, app included is for demonstration purposes
 only.  It is a very contrived example - there are no tests included, and some of
 code would be considered a 'hack' to just help illustrate the examples.
 
+You can find a copy of the Presentation, in PDF format, within this repo.  It is
+located in the MISC/ directory.
 
 You will need the following to use this repo:
 
